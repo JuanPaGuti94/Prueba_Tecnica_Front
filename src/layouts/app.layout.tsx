@@ -1,9 +1,12 @@
 import { FC } from 'react';
 import { Outlet } from 'react-router-dom';
+import { TopBar } from '../shared/topbar/topbar.component';
+import { Footer } from '../shared/footer/footer.component';
 
 export const AppLayout: FC = () => {
   return (
     <div className="w-full h-screen overflow-y-scroll bg-[#ffffff]">
+      <TopBar />
       <main
         data-testid="main"
         className="h-auto"
@@ -13,6 +16,7 @@ export const AppLayout: FC = () => {
       >
         <Outlet />
       </main>
+      <Footer />
     </div>
   );
 };

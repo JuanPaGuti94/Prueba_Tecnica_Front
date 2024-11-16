@@ -1,6 +1,7 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
+/// <reference types="vitest" />
+/// <reference types="vite/client"/>
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
@@ -16,8 +17,8 @@ export default defineConfig({
     },
   },
   test: {
-    exclude: ['**/node_modules/**', './src/main.tsx','**/*.interface.ts', ',**/*.constants.ts'],
-    include: [  '**/*.test.{ts,tsx}', '**/*.spec.ts'],
+    exclude: ['**/node_modules/**', './src/main.tsx','**/*.interface.ts', '**/*.constants.ts'],
+    include: ['**/*.test.{ts,tsx}', '**/*.spec.ts'],
     globals: true,
     environment: 'jsdom',
     setupFiles: ['./src/setup-test.ts'],
@@ -25,7 +26,7 @@ export default defineConfig({
       provider: 'v8',
       reportsDirectory: './coverage',
       enabled: true,
-      exclude: ['**/node_modules/**', './src/main.tsx', '**/index.ts','**/*.interface.ts', '**/*.d.ts',],
+      exclude: ['**/node_modules/**', './src/main.tsx', '**/index.ts','**/*.interface.ts', '**/*.d.ts'],
       include: ['**/src/**/*.{ts,tsx,js,jsx}'],
       reporter: ['lcov','json','text','clover','html'],
     },

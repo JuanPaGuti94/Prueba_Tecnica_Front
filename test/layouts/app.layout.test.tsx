@@ -4,10 +4,6 @@ import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { AppLayout } from '../../src/layouts/app.layout';
 import { afterEach, beforeAll, beforeEach, describe, it, vi } from 'vitest';
 
-vi.mock('@react-keycloak/web');
-vi.mock('../../src/hooks/applicant.hook');
-vi.mock('../../src/hooks/stage-store.hook');
-vi.mock('../../src/hooks/useScreenSize.hook');
 vi.mock('../../src/shared/components/sidebar/sidebar.component');
 vi.mock('../../src/shared/components/topbar/topbar.component');
 
