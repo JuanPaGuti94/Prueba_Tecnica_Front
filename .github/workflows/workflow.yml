@@ -14,17 +14,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20.15' 
-
       - name: Install dependencies
         run: yarn install
 
       - name: Run tests
         run: yarn test
-
+        
       - name: Set up Git
         run: |
           git config --global user.name "GitHub Actions"
