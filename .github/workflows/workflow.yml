@@ -6,8 +6,8 @@ on:
       - 'feature/*'
 
 permissions:
-  contents: write  
-  pull-requests: write  
+  contents: write
+  pull-requests: write
 
 jobs:
   create-pr:
@@ -36,4 +36,6 @@ jobs:
           head: ${{ github.ref }} 
           title: "Merge feature branch to develop"
           body: "This is an automated PR to merge the feature branch into develop"
-          draft: false 
+          draft: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
