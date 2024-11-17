@@ -26,7 +26,7 @@ export default defineConfig({
       provider: 'v8',
       reportsDirectory: './coverage',
       enabled: true,
-      exclude: ['**/node_modules/**', './src/main.tsx', '**/index.ts','**/*.interface.ts', '**/*.d.ts'],
+      exclude: ['**/node_modules/**', './src/main.tsx', '**/index.ts','**/*.interface.ts', '**/*.d.ts' ,'**/*.type.ts'],
       include: ['**/src/**/*.{ts,tsx,js,jsx}'],
       reporter: ['lcov','json','text','clover','html'],
     },
