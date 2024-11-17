@@ -905,6 +905,14 @@
     loupe "^3.1.2"
     tinyrainbow "^1.2.0"
 
+accepts@~1.3.8:
+  version "1.3.8"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/accepts/-/accepts-1.3.8.tgz#0bf0be125b67014adcb0b0921e62db7bffe16b2e"
+  integrity sha1-C/C+EltnAUrcsLCSHmLbe//hay4=
+  dependencies:
+    mime-types "~2.1.34"
+    negotiator "0.6.3"
+
 acorn-jsx@^5.3.2:
   version "5.3.2"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/acorn-jsx/-/acorn-jsx-5.3.2.tgz"
@@ -999,6 +1007,11 @@ aria-query@^5.0.0:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/aria-query/-/aria-query-5.3.2.tgz#93f81a43480e33a338f19163a3d10a50c01dcd59"
   integrity sha1-k/gaQ0gOM6M48ZFjo9EKUMAdzVk=
 
+array-flatten@1.1.1:
+  version "1.1.1"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
+  integrity sha1-ml9pkFGx5wczKPKgCJaLZOopVdI=
+
 assertion-error@^2.0.1:
   version "2.0.1"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/assertion-error/-/assertion-error-2.0.1.tgz#f641a196b335690b1070bf00b6e7593fec190bf7"
@@ -1053,6 +1066,24 @@ binary-extensions@^2.0.0:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/binary-extensions/-/binary-extensions-2.3.0.tgz#f6e14a97858d327252200242d4ccfe522c445522"
   integrity sha1-9uFKl4WNMnJSIAJC1Mz+UixEVSI=
 
+body-parser@1.20.3:
+  version "1.20.3"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/body-parser/-/body-parser-1.20.3.tgz#1953431221c6fb5cd63c4b36d53fab0928e548c6"
+  integrity sha1-GVNDEiHG+1zWPEs21T+rCSjlSMY=
+  dependencies:
+    bytes "3.1.2"
+    content-type "~1.0.5"
+    debug "2.6.9"
+    depd "2.0.0"
+    destroy "1.2.0"
+    http-errors "2.0.0"
+    iconv-lite "0.4.24"
+    on-finished "2.4.1"
+    qs "6.13.0"
+    raw-body "2.5.2"
+    type-is "~1.6.18"
+    unpipe "1.0.0"
+
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/brace-expansion/-/brace-expansion-1.1.11.tgz"
@@ -1085,10 +1116,26 @@ browserslist@^4.23.3, browserslist@^4.24.0:
     node-releases "^2.0.18"
     update-browserslist-db "^1.1.1"
 
+bytes@3.1.2:
+  version "3.1.2"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/bytes/-/bytes-3.1.2.tgz#8b0beeb98605adf1b128fa4386403c009e0221a5"
+  integrity sha1-iwvuuYYFrfGxKPpDhkA8AJ4CIaU=
+
 cac@^6.7.14:
   version "6.7.14"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/cac/-/cac-6.7.14.tgz#804e1e6f506ee363cb0e3ccbb09cad5dd9870959"
   integrity sha1-gE4eb1Bu42PLDjzLsJytXdmHCVk=
+
+call-bind@^1.0.7:
+  version "1.0.7"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/call-bind/-/call-bind-1.0.7.tgz#06016599c40c56498c18769d2730be242b6fa3b9"
+  integrity sha1-BgFlmcQMVkmMGHadJzC+JCtvo7k=
+  dependencies:
+    es-define-property "^1.0.0"
+    es-errors "^1.3.0"
+    function-bind "^1.1.2"
+    get-intrinsic "^1.2.4"
+    set-function-length "^1.2.1"
 
 callsites@^3.0.0:
   version "3.1.0"
@@ -1199,10 +1246,40 @@ concat-map@0.0.1:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/concat-map/-/concat-map-0.0.1.tgz"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
+content-disposition@0.5.4:
+  version "0.5.4"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/content-disposition/-/content-disposition-0.5.4.tgz#8b82b4efac82512a02bb0b1dcec9d2c5e8eb5bfe"
+  integrity sha1-i4K076yCUSoCuwsdzsnSxejrW/4=
+  dependencies:
+    safe-buffer "5.2.1"
+
+content-type@~1.0.4, content-type@~1.0.5:
+  version "1.0.5"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/content-type/-/content-type-1.0.5.tgz#8b773162656d1d1086784c8f23a54ce6d73d7918"
+  integrity sha1-i3cxYmVtHRCGeEyPI6VM5tc9eRg=
+
 convert-source-map@^2.0.0:
   version "2.0.0"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/convert-source-map/-/convert-source-map-2.0.0.tgz"
   integrity sha1-S1YPZJ/E6RjdCrdc9JYei8iC2Co=
+
+cookie-signature@1.0.6:
+  version "1.0.6"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/cookie-signature/-/cookie-signature-1.0.6.tgz#e303a882b342cc3ee8ca513a79999734dab3ae2c"
+  integrity sha1-4wOogrNCzD7oylE6eZmXNNqzriw=
+
+cookie@0.7.1:
+  version "0.7.1"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/cookie/-/cookie-0.7.1.tgz#2f73c42142d5d5cf71310a74fc4ae61670e5dbc9"
+  integrity sha1-L3PEIULV1c9xMQp0/ErmFnDl28k=
+
+cors@^2.8.5:
+  version "2.8.5"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/cors/-/cors-2.8.5.tgz#eac11da51592dd86b9f06f6e7ac293b3df875d29"
+  integrity sha1-6sEdpRWS3Ya58G9uesKTs9+HXSk=
+  dependencies:
+    object-assign "^4"
+    vary "^1"
 
 crc-32@~1.2.0, crc-32@~1.2.1:
   version "1.2.2"
@@ -1253,6 +1330,13 @@ date-fns@^4.1.0:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/date-fns/-/date-fns-4.1.0.tgz#64b3d83fff5aa80438f5b1a633c2e83b8a1c2d14"
   integrity sha1-ZLPYP/9aqAQ49bGmM8LoO4ocLRQ=
 
+debug@2.6.9:
+  version "2.6.9"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
+  integrity sha1-XRKFFd8TT/Mn6QpMk/Tgd6U2NB8=
+  dependencies:
+    ms "2.0.0"
+
 debug@4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2, debug@^4.3.4, debug@^4.3.7:
   version "4.3.7"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/debug/-/debug-4.3.7.tgz"
@@ -1275,15 +1359,34 @@ deep-is@^0.1.3:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/deep-is/-/deep-is-0.1.4.tgz"
   integrity sha1-pvLc5hL63S7x9Rm3NVHxfoUZmDE=
 
+define-data-property@^1.1.4:
+  version "1.1.4"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/define-data-property/-/define-data-property-1.1.4.tgz#894dc141bb7d3060ae4366f6a0107e68fbe48c5e"
+  integrity sha1-iU3BQbt9MGCuQ2b2oBB+aPvkjF4=
+  dependencies:
+    es-define-property "^1.0.0"
+    es-errors "^1.3.0"
+    gopd "^1.0.1"
+
 delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
+depd@2.0.0:
+  version "2.0.0"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/depd/-/depd-2.0.0.tgz#b696163cc757560d09cf22cc8fad1571b79e76df"
+  integrity sha1-tpYWPMdXVg0JzyLMj60Vcbeedt8=
+
 dequal@^2.0.3:
   version "2.0.3"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/dequal/-/dequal-2.0.3.tgz#2644214f1997d39ed0ee0ece72335490a7ac67be"
   integrity sha1-JkQhTxmX057Q7g7OcjNUkKesZ74=
+
+destroy@1.2.0:
+  version "1.2.0"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/destroy/-/destroy-1.2.0.tgz#4803735509ad8be552934c67df614f94e66fa015"
+  integrity sha1-SANzVQmti+VSk0xn32FPlOZvoBU=
 
 didyoumean@^1.2.2:
   version "1.2.2"
@@ -1310,6 +1413,11 @@ eastasianwidth@^0.2.0:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/eastasianwidth/-/eastasianwidth-0.2.0.tgz#696ce2ec0aa0e6ea93a397ffcf24aa7840c827cb"
   integrity sha1-aWzi7Aqg5uqTo5f/zySqeEDIJ8s=
 
+ee-first@1.1.1:
+  version "1.1.1"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
+  integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
+
 electron-to-chromium@^1.5.41:
   version "1.5.62"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/electron-to-chromium/-/electron-to-chromium-1.5.62.tgz"
@@ -1325,10 +1433,32 @@ emoji-regex@^9.2.2:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/emoji-regex/-/emoji-regex-9.2.2.tgz#840c8803b0d8047f4ff0cf963176b32d4ef3ed72"
   integrity sha1-hAyIA7DYBH9P8M+WMXazLU7z7XI=
 
+encodeurl@~1.0.2:
+  version "1.0.2"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
+  integrity sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
+
+encodeurl@~2.0.0:
+  version "2.0.0"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/encodeurl/-/encodeurl-2.0.0.tgz#7b8ea898077d7e409d3ac45474ea38eaf0857a58"
+  integrity sha1-e46omAd9fkCdOsRUdOo46vCFelg=
+
 entities@^4.5.0:
   version "4.5.0"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/entities/-/entities-4.5.0.tgz#5d268ea5e7113ec74c4d033b79ea5a35a488fb48"
   integrity sha1-XSaOpecRPsdMTQM7eepaNaSI+0g=
+
+es-define-property@^1.0.0:
+  version "1.0.0"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/es-define-property/-/es-define-property-1.0.0.tgz#c7faefbdff8b2696cf5f46921edfb77cc4ba3845"
+  integrity sha1-x/rvvf+LJpbPX0aSHt+3fMS6OEU=
+  dependencies:
+    get-intrinsic "^1.2.4"
+
+es-errors@^1.3.0:
+  version "1.3.0"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/es-errors/-/es-errors-1.3.0.tgz#05f75a25dab98e4fb1dcd5e1472c0546d5057c8f"
+  integrity sha1-BfdaJdq5jk+x3NXhRywFRtUFfI8=
 
 es-module-lexer@^1.5.4:
   version "1.5.4"
@@ -1368,6 +1498,11 @@ escalade@^3.2.0:
   version "3.2.0"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/escalade/-/escalade-3.2.0.tgz"
   integrity sha1-ARo/aYVroYnf+n3I/M6Z0qh5A+U=
+
+escape-html@~1.0.3:
+  version "1.0.3"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
+  integrity sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=
 
 escape-string-regexp@^4.0.0:
   version "4.0.0"
@@ -1482,10 +1617,52 @@ esutils@^2.0.2:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/esutils/-/esutils-2.0.3.tgz"
   integrity sha1-dNLrTeC42hKTcRkQ1Qd1ubcQ72Q=
 
+etag@~1.8.1:
+  version "1.8.1"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
+  integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
+
 expect-type@^1.1.0:
   version "1.1.0"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/expect-type/-/expect-type-1.1.0.tgz#a146e414250d13dfc49eafcfd1344a4060fa4c75"
   integrity sha1-oUbkFCUNE9/Enq/P0TRKQGD6THU=
+
+express@^4.21.1:
+  version "4.21.1"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/express/-/express-4.21.1.tgz#9dae5dda832f16b4eec941a4e44aa89ec481b281"
+  integrity sha1-na5d2oMvFrTuyUGk5EqonsSBsoE=
+  dependencies:
+    accepts "~1.3.8"
+    array-flatten "1.1.1"
+    body-parser "1.20.3"
+    content-disposition "0.5.4"
+    content-type "~1.0.4"
+    cookie "0.7.1"
+    cookie-signature "1.0.6"
+    debug "2.6.9"
+    depd "2.0.0"
+    encodeurl "~2.0.0"
+    escape-html "~1.0.3"
+    etag "~1.8.1"
+    finalhandler "1.3.1"
+    fresh "0.5.2"
+    http-errors "2.0.0"
+    merge-descriptors "1.0.3"
+    methods "~1.1.2"
+    on-finished "2.4.1"
+    parseurl "~1.3.3"
+    path-to-regexp "0.1.10"
+    proxy-addr "~2.0.7"
+    qs "6.13.0"
+    range-parser "~1.2.1"
+    safe-buffer "5.2.1"
+    send "0.19.0"
+    serve-static "1.16.2"
+    setprototypeof "1.2.0"
+    statuses "2.0.1"
+    type-is "~1.6.18"
+    utils-merge "1.0.1"
+    vary "~1.1.2"
 
 fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
@@ -1544,6 +1721,19 @@ fill-range@^7.1.1:
   dependencies:
     to-regex-range "^5.0.1"
 
+finalhandler@1.3.1:
+  version "1.3.1"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/finalhandler/-/finalhandler-1.3.1.tgz#0c575f1d1d324ddd1da35ad7ece3df7d19088019"
+  integrity sha1-DFdfHR0yTd0do1rX7OPffRkIgBk=
+  dependencies:
+    debug "2.6.9"
+    encodeurl "~2.0.0"
+    escape-html "~1.0.3"
+    on-finished "2.4.1"
+    parseurl "~1.3.3"
+    statuses "2.0.1"
+    unpipe "~1.0.0"
+
 find-up@^5.0.0:
   version "5.0.0"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/find-up/-/find-up-5.0.0.tgz"
@@ -1587,6 +1777,11 @@ form-data@^4.0.0:
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
+forwarded@0.2.0:
+  version "0.2.0"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/forwarded/-/forwarded-0.2.0.tgz#2269936428aad4c15c7ebe9779a84bf0b2a81811"
+  integrity sha1-ImmTZCiq1MFcfr6XeahL8LKoGBE=
+
 frac@~1.1.2:
   version "1.1.2"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/frac/-/frac-1.1.2.tgz#3d74f7f6478c88a1b5020306d747dc6313c74d0b"
@@ -1604,6 +1799,11 @@ framer-motion@^11.5.4:
   dependencies:
     tslib "^2.4.0"
 
+fresh@0.5.2:
+  version "0.5.2"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
+  integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
+
 fsevents@~2.3.2, fsevents@~2.3.3:
   version "2.3.3"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/fsevents/-/fsevents-2.3.3.tgz"
@@ -1618,6 +1818,17 @@ gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/gensync/-/gensync-1.0.0-beta.2.tgz"
   integrity sha1-MqbudsPX9S1GsrGuXZP+qFgKJeA=
+
+get-intrinsic@^1.1.3, get-intrinsic@^1.2.4:
+  version "1.2.4"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/get-intrinsic/-/get-intrinsic-1.2.4.tgz#e385f5a4b5227d449c3eabbad05494ef0abbeadd"
+  integrity sha1-44X1pLUifUScPqu60FSU7wq76t0=
+  dependencies:
+    es-errors "^1.3.0"
+    function-bind "^1.1.2"
+    has-proto "^1.0.1"
+    has-symbols "^1.0.3"
+    hasown "^2.0.0"
 
 glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
@@ -1665,6 +1876,13 @@ goober@^2.1.10:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/goober/-/goober-2.1.16.tgz#7d548eb9b83ff0988d102be71f271ca8f9c82a95"
   integrity sha1-fVSOubg/8JiNECvnHyccqPnIKpU=
 
+gopd@^1.0.1:
+  version "1.0.1"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/gopd/-/gopd-1.0.1.tgz#29ff76de69dac7489b7c0918a5788e56477c332c"
+  integrity sha1-Kf923mnax0ibfAkYpXiOVkd8Myw=
+  dependencies:
+    get-intrinsic "^1.1.3"
+
 graphemer@^1.4.0:
   version "1.4.0"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/graphemer/-/graphemer-1.4.0.tgz"
@@ -1675,7 +1893,24 @@ has-flag@^4.0.0:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/has-flag/-/has-flag-4.0.0.tgz"
   integrity sha1-lEdx/ZyByBJlxNaUGGDaBrtZR5s=
 
-hasown@^2.0.2:
+has-property-descriptors@^1.0.2:
+  version "1.0.2"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/has-property-descriptors/-/has-property-descriptors-1.0.2.tgz#963ed7d071dc7bf5f084c5bfbe0d1b6222586854"
+  integrity sha1-lj7X0HHce/XwhMW/vg0bYiJYaFQ=
+  dependencies:
+    es-define-property "^1.0.0"
+
+has-proto@^1.0.1:
+  version "1.0.3"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/has-proto/-/has-proto-1.0.3.tgz#b31ddfe9b0e6e9914536a6ab286426d0214f77fd"
+  integrity sha1-sx3f6bDm6ZFFNqarKGQm0CFPd/0=
+
+has-symbols@^1.0.3:
+  version "1.0.3"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/has-symbols/-/has-symbols-1.0.3.tgz#bb7b2c4349251dce87b125f7bdf874aa7c8b39f8"
+  integrity sha1-u3ssQ0klHc6HsSX3vfh0qnyLOfg=
+
+hasown@^2.0.0, hasown@^2.0.2:
   version "2.0.2"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/hasown/-/hasown-2.0.2.tgz#003eaf91be7adc372e84ec59dc37252cedb80003"
   integrity sha1-AD6vkb563DcuhOxZ3DclLO24AAM=
@@ -1701,6 +1936,17 @@ html-escaper@^2.0.0:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/html-escaper/-/html-escaper-2.0.2.tgz#dfd60027da36a36dfcbe236262c00a5822681453"
   integrity sha1-39YAJ9o2o238viNiYsAKWCJoFFM=
 
+http-errors@2.0.0:
+  version "2.0.0"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/http-errors/-/http-errors-2.0.0.tgz#b7774a1486ef73cf7667ac9ae0858c012c57b9d3"
+  integrity sha1-t3dKFIbvc892Z6ya4IWMASxXudM=
+  dependencies:
+    depd "2.0.0"
+    inherits "2.0.4"
+    setprototypeof "1.2.0"
+    statuses "2.0.1"
+    toidentifier "1.0.1"
+
 http-proxy-agent@^7.0.2:
   version "7.0.2"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/http-proxy-agent/-/http-proxy-agent-7.0.2.tgz#9a8b1f246866c028509486585f62b8f2c18c270e"
@@ -1716,6 +1962,13 @@ https-proxy-agent@^7.0.5:
   dependencies:
     agent-base "^7.0.2"
     debug "4"
+
+iconv-lite@0.4.24:
+  version "0.4.24"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
+  integrity sha1-ICK0sl+93CHS9SSXSkdKr+czkIs=
+  dependencies:
+    safer-buffer ">= 2.1.2 < 3"
 
 iconv-lite@0.6.3:
   version "0.6.3"
@@ -1746,6 +1999,16 @@ indent-string@^4.0.0:
   version "4.0.0"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/indent-string/-/indent-string-4.0.0.tgz#624f8f4497d619b2d9768531d58f4122854d7251"
   integrity sha1-Yk+PRJfWGbLZdoUx1Y9BIoVNclE=
+
+inherits@2.0.4:
+  version "2.0.4"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
+  integrity sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=
+
+ipaddr.js@1.9.1:
+  version "1.9.1"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/ipaddr.js/-/ipaddr.js-1.9.1.tgz#bff38543eeb8984825079ff3a2a8e6cbd46781b3"
+  integrity sha1-v/OFQ+64mEglB5/zoqjmy9RngbM=
 
 is-binary-path@~2.1.0:
   version "2.1.0"
@@ -2044,10 +2307,25 @@ make-dir@^4.0.0:
   dependencies:
     semver "^7.5.3"
 
+media-typer@0.3.0:
+  version "0.3.0"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
+  integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
+
+merge-descriptors@1.0.3:
+  version "1.0.3"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/merge-descriptors/-/merge-descriptors-1.0.3.tgz#d80319a65f3c7935351e5cfdac8f9318504dbed5"
+  integrity sha1-2AMZpl88eTU1Hlz9rI+TGFBNvtU=
+
 merge2@^1.3.0:
   version "1.4.1"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/merge2/-/merge2-1.4.1.tgz"
   integrity sha1-Q2iJL4hekHRVpv19xVwMnUBJkK4=
+
+methods@~1.1.2:
+  version "1.1.2"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
+  integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
 micromatch@^4.0.4, micromatch@^4.0.8:
   version "4.0.8"
@@ -2062,12 +2340,17 @@ mime-db@1.52.0:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/mime-db/-/mime-db-1.52.0.tgz#bbabcdc02859f4987301c856e3387ce5ec43bf70"
   integrity sha1-u6vNwChZ9JhzAchW4zh85exDv3A=
 
-mime-types@^2.1.12:
+mime-types@^2.1.12, mime-types@~2.1.24, mime-types@~2.1.34:
   version "2.1.35"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/mime-types/-/mime-types-2.1.35.tgz#381a871b62a734450660ae3deee44813f70d959a"
   integrity sha1-OBqHG2KnNEUGYK497uRIE/cNlZo=
   dependencies:
     mime-db "1.52.0"
+
+mime@1.6.0:
+  version "1.6.0"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
+  integrity sha1-Ms2eXGRVO9WNGaVor0Uqz/BJgbE=
 
 min-indent@^1.0.0:
   version "1.0.1"
@@ -2098,7 +2381,12 @@ mrmime@^2.0.0:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/mrmime/-/mrmime-2.0.0.tgz#151082a6e06e59a9a39b46b3e14d5cfe92b3abb4"
   integrity sha1-FRCCpuBuWamjm0az4U1c/pKzq7Q=
 
-ms@^2.1.3:
+ms@2.0.0:
+  version "2.0.0"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
+  integrity sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
+
+ms@2.1.3, ms@^2.1.3:
   version "2.1.3"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/ms/-/ms-2.1.3.tgz"
   integrity sha1-V0yBOM4dK1hh8LRFedut1gxmFbI=
@@ -2122,6 +2410,11 @@ natural-compare@^1.4.0:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/natural-compare/-/natural-compare-1.4.0.tgz"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
+negotiator@0.6.3:
+  version "0.6.3"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
+  integrity sha1-WOMjpy/twNb5zU0x/kn1FHlZDM0=
+
 node-releases@^2.0.18:
   version "2.0.18"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/node-releases/-/node-releases-2.0.18.tgz"
@@ -2142,7 +2435,7 @@ nwsapi@^2.2.12:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/nwsapi/-/nwsapi-2.2.13.tgz#e56b4e98960e7a040e5474536587e599c4ff4655"
   integrity sha1-5WtOmJYOegQOVHRTZYflmcT/RlU=
 
-object-assign@^4.0.1:
+object-assign@^4, object-assign@^4.0.1:
   version "4.1.1"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
@@ -2151,6 +2444,18 @@ object-hash@^3.0.0:
   version "3.0.0"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/object-hash/-/object-hash-3.0.0.tgz#73f97f753e7baffc0e2cc9d6e079079744ac82e9"
   integrity sha1-c/l/dT57r/wOLMnW4HkHl0Ssguk=
+
+object-inspect@^1.13.1:
+  version "1.13.3"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/object-inspect/-/object-inspect-1.13.3.tgz#f14c183de51130243d6d18ae149375ff50ea488a"
+  integrity sha1-8UwYPeURMCQ9bRiuFJN1/1DqSIo=
+
+on-finished@2.4.1:
+  version "2.4.1"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/on-finished/-/on-finished-2.4.1.tgz#58c8c44116e54845ad57f14ab10b03533184ac3f"
+  integrity sha1-WMjEQRblSEWtV/FKsQsDUzGErD8=
+  dependencies:
+    ee-first "1.1.1"
 
 optionator@^0.9.3:
   version "0.9.4"
@@ -2197,6 +2502,11 @@ parse5@^7.1.2:
   dependencies:
     entities "^4.5.0"
 
+parseurl@~1.3.3:
+  version "1.3.3"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/parseurl/-/parseurl-1.3.3.tgz#9da19e7bee8d12dff0513ed5b76957793bc2e8d4"
+  integrity sha1-naGee+6NEt/wUT7Vt2lXeTvC6NQ=
+
 path-exists@^4.0.0:
   version "4.0.0"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/path-exists/-/path-exists-4.0.0.tgz"
@@ -2219,6 +2529,11 @@ path-scurry@^1.11.1:
   dependencies:
     lru-cache "^10.2.0"
     minipass "^5.0.0 || ^6.0.2 || ^7.0.0"
+
+path-to-regexp@0.1.10:
+  version "0.1.10"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/path-to-regexp/-/path-to-regexp-0.1.10.tgz#67e9108c5c0551b9e5326064387de4763c4d5f8b"
+  integrity sha1-Z+kQjFwFUbnlMmBkOH3kdjxNX4s=
 
 pathe@^1.1.2:
   version "1.1.2"
@@ -2322,6 +2637,14 @@ pretty-format@^27.0.2:
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
+proxy-addr@~2.0.7:
+  version "2.0.7"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/proxy-addr/-/proxy-addr-2.0.7.tgz#f19fe69ceab311eeb94b42e70e8c2070f9ba1025"
+  integrity sha1-8Z/mnOqzEe65S0LnDowgcPm6ECU=
+  dependencies:
+    forwarded "0.2.0"
+    ipaddr.js "1.9.1"
+
 proxy-from-env@^1.1.0:
   version "1.1.0"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
@@ -2332,10 +2655,32 @@ punycode@^2.1.0, punycode@^2.3.1:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/punycode/-/punycode-2.3.1.tgz"
   integrity sha1-AnQi4vrsCyXhVJw+G9gwm5EztuU=
 
+qs@6.13.0:
+  version "6.13.0"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/qs/-/qs-6.13.0.tgz#6ca3bd58439f7e245655798997787b0d88a51906"
+  integrity sha1-bKO9WEOffiRWVXmJl3h7DYilGQY=
+  dependencies:
+    side-channel "^1.0.6"
+
 queue-microtask@^1.2.2:
   version "1.2.3"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/queue-microtask/-/queue-microtask-1.2.3.tgz"
   integrity sha1-SSkii7xyTfrEPg77BYyve2z7YkM=
+
+range-parser@~1.2.1:
+  version "1.2.1"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
+  integrity sha1-PPNwI9GZ4cJNGlW4SADC8+ZGgDE=
+
+raw-body@2.5.2:
+  version "2.5.2"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/raw-body/-/raw-body-2.5.2.tgz#99febd83b90e08975087e8f1f9419a149366b68a"
+  integrity sha1-mf69g7kOCJdQh+jx+UGaFJNmtoo=
+  dependencies:
+    bytes "3.1.2"
+    http-errors "2.0.0"
+    iconv-lite "0.4.24"
+    unpipe "1.0.0"
 
 react-dom@^18.3.1:
   version "18.3.1"
@@ -2491,7 +2836,12 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-"safer-buffer@>= 2.1.2 < 3.0.0":
+safe-buffer@5.2.1:
+  version "5.2.1"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
+  integrity sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY=
+
+"safer-buffer@>= 2.1.2 < 3", "safer-buffer@>= 2.1.2 < 3.0.0":
   version "2.1.2"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=
@@ -2520,6 +2870,52 @@ semver@^7.5.3, semver@^7.6.0:
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/semver/-/semver-7.6.3.tgz#980f7b5550bc175fb4dc09403085627f9eb33143"
   integrity sha1-mA97VVC8F1+03AlAMIVif56zMUM=
 
+send@0.19.0:
+  version "0.19.0"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/send/-/send-0.19.0.tgz#bbc5a388c8ea6c048967049dbeac0e4a3f09d7f8"
+  integrity sha1-u8WjiMjqbASJZwSdvqwOSj8J1/g=
+  dependencies:
+    debug "2.6.9"
+    depd "2.0.0"
+    destroy "1.2.0"
+    encodeurl "~1.0.2"
+    escape-html "~1.0.3"
+    etag "~1.8.1"
+    fresh "0.5.2"
+    http-errors "2.0.0"
+    mime "1.6.0"
+    ms "2.1.3"
+    on-finished "2.4.1"
+    range-parser "~1.2.1"
+    statuses "2.0.1"
+
+serve-static@1.16.2:
+  version "1.16.2"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/serve-static/-/serve-static-1.16.2.tgz#b6a5343da47f6bdd2673848bf45754941e803296"
+  integrity sha1-tqU0PaR/a90mc4SL9FdUlB6AMpY=
+  dependencies:
+    encodeurl "~2.0.0"
+    escape-html "~1.0.3"
+    parseurl "~1.3.3"
+    send "0.19.0"
+
+set-function-length@^1.2.1:
+  version "1.2.2"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/set-function-length/-/set-function-length-1.2.2.tgz#aac72314198eaed975cf77b2c3b6b880695e5449"
+  integrity sha1-qscjFBmOrtl1z3eyw7a4gGleVEk=
+  dependencies:
+    define-data-property "^1.1.4"
+    es-errors "^1.3.0"
+    function-bind "^1.1.2"
+    get-intrinsic "^1.2.4"
+    gopd "^1.0.1"
+    has-property-descriptors "^1.0.2"
+
+setprototypeof@1.2.0:
+  version "1.2.0"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/setprototypeof/-/setprototypeof-1.2.0.tgz#66c9a24a73f9fc28cbe66b09fed3d33dcaf1b424"
+  integrity sha1-ZsmiSnP5/CjL5msJ/tPTPcrxtCQ=
+
 shebang-command@^2.0.0:
   version "2.0.0"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/shebang-command/-/shebang-command-2.0.0.tgz"
@@ -2531,6 +2927,16 @@ shebang-regex@^3.0.0:
   version "3.0.0"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/shebang-regex/-/shebang-regex-3.0.0.tgz"
   integrity sha1-rhbxZE2HPsrYQ7AwexQzYtTEIXI=
+
+side-channel@^1.0.6:
+  version "1.0.6"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/side-channel/-/side-channel-1.0.6.tgz#abd25fb7cd24baf45466406b1096b7831c9215f2"
+  integrity sha1-q9Jft80kuvRUZkBrEJa3gxySFfI=
+  dependencies:
+    call-bind "^1.0.7"
+    es-errors "^1.3.0"
+    get-intrinsic "^1.2.4"
+    object-inspect "^1.13.1"
 
 siginfo@^2.0.0:
   version "2.0.0"
@@ -2567,6 +2973,11 @@ stackback@0.0.2:
   version "0.0.2"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/stackback/-/stackback-0.0.2.tgz#1ac8a0d9483848d1695e418b6d031a3c3ce68e3b"
   integrity sha1-Gsig2Ug4SNFpXkGLbQMaPDzmjjs=
+
+statuses@2.0.1:
+  version "2.0.1"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/statuses/-/statuses-2.0.1.tgz#55cb000ccf1d48728bd23c685a063998cf1a1b63"
+  integrity sha1-VcsADM8dSHKL0jxoWgY5mM8aG2M=
 
 std-env@^3.8.0:
   version "3.8.0"
@@ -2766,6 +3177,11 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
+toidentifier@1.0.1:
+  version "1.0.1"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/toidentifier/-/toidentifier-1.0.1.tgz#3be34321a88a820ed1bd80dfaa33e479fbb8dd35"
+  integrity sha1-O+NDIaiKgg7RvYDfqjPkefu43TU=
+
 totalist@^3.0.0:
   version "3.0.1"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/totalist/-/totalist-3.0.1.tgz#ba3a3d600c915b1a97872348f79c127475f6acf8"
@@ -2807,6 +3223,14 @@ type-check@^0.4.0, type-check@~0.4.0:
   dependencies:
     prelude-ls "^1.2.1"
 
+type-is@~1.6.18:
+  version "1.6.18"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/type-is/-/type-is-1.6.18.tgz#4e552cd05df09467dcbc4ef739de89f2cf37c131"
+  integrity sha1-TlUs0F3wlGfcvE73Od6J8s83wTE=
+  dependencies:
+    media-typer "0.3.0"
+    mime-types "~2.1.24"
+
 typescript-eslint@^8.0.1:
   version "8.14.0"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/typescript-eslint/-/typescript-eslint-8.14.0.tgz#2435c0628e90303544fdd63ae311e9bf6d149a5d"
@@ -2825,6 +3249,11 @@ undici-types@~6.19.8:
   version "6.19.8"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/undici-types/-/undici-types-6.19.8.tgz#35111c9d1437ab83a7cdc0abae2f26d88eda0a02"
   integrity sha1-NREcnRQ3q4OnzcCrri8m2I7aCgI=
+
+unpipe@1.0.0, unpipe@~1.0.0:
+  version "1.0.0"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
+  integrity sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw=
 
 update-browserslist-db@^1.1.1:
   version "1.1.1"
@@ -2845,6 +3274,16 @@ util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
+
+utils-merge@1.0.1:
+  version "1.0.1"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
+  integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
+
+vary@^1, vary@~1.1.2:
+  version "1.1.2"
+  resolved "https://pkgs.dev.azure.com/master-aws/Support/_packaging/utp-front-components/npm/registry/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
+  integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
 vite-node@2.1.5:
   version "2.1.5"

@@ -1,0 +1,83 @@
+{
+    "products": [{
+        "id": 1,
+        "name": "Tableta Samsung Galaxy Tab S6",
+        "price": 1029900,
+        "description": "lorem ipsum",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_824474-MLA75167676726_032024-F.webp",
+        "stock": 20
+    },
+    {
+        "id": 2,
+        "name": "AIO HP",
+        "price": 1579900,
+        "description": "lorem ipsum",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_870157-MLU72161648642_102023-F.webp",
+       "stock": 5 
+    },
+    {
+        "id": 3,
+        "name": "Apple Mini",
+        "price": 2540037,
+        "description": "lorem ipsum",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_991418-MLU73672849281_122023-F.webp",
+        "stock": 10
+    },
+    {
+        "id": 4,
+        "name": "Procesador AMD Ryzen 7",
+        "price": 1000000,
+        "description": "lorem ipsum",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_622790-MLU72699561931_112023-F.webp",
+        "stock": 5
+    },
+    {
+        "id": 5,
+        "name": "Logitech Z906",
+        "price": 1372900,
+        "description": "lorem ipsum",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_806997-MLU75193834019_032024-F.webp",
+        "stock": 100
+    },
+    {
+        "id": 6,
+        "name": "Teclado Gamer Xtrike",
+        "price": 102900,
+        "description": "lorem ipsum",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_918935-MLU72649999599_112023-F.webp",
+        "stock": 100
+    },
+    {
+        "id": 7,
+        "name": "Kit de teclado y mouse Logitech",
+        "price": 60238,
+        "description": "lorem ipsum",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_723536-MLU74244298109_012024-F.webp",
+        "stock": 10
+    },
+    {
+        "id": 8,
+        "name": "Audifonos Pro 2ª",
+        "price": 34994,
+        "description": "lorem ipsum",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_967511-MLU78870039634_092024-F.webp",
+        "stock": 1000
+    },
+    {
+        "id": 9,
+        "name": "Amazon Echo",
+        "price": 203900,
+        "description": "lorem ipsum",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_976672-MLU72754995740_112023-F.webp",
+        "stock": 10
+    },
+    {
+        "id": 10,
+        "name": "Xiaomi Redmi Note 13 Pro",
+        "price": 828900,
+        "description": "lorem ipsum",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_707287-MLA79551602723_092024-F.webp",
+        "stock": 100
+    }],
+    "orders": []
+}
