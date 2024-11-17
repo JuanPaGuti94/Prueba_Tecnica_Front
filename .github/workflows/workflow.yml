@@ -19,6 +19,9 @@ jobs:
         with:
           node-version: '20.15' 
 
+      - name: Install dependencies
+        run: yarn install
+
       - name: Run tests
         run: yarn test
 
