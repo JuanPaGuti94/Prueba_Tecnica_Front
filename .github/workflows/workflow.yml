@@ -3,7 +3,10 @@ name: Merge Feature Branches to Develop
 on:
   push:
     branches:
-      - 'feature/*'  
+      - 'feature/*'
+        
+permissions:
+  contents: write 
 
 jobs:
   create-pr:
