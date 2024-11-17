@@ -2,11 +2,11 @@ import { FC } from 'react';
 import { UserProfile } from './user-profile/user-profile.component';
 import { ProfileIcon } from './profile-icon/profile-icon.component';
 import { DropdownMenu } from './dropdown-menu/dropdown-menu.component'  ;
-import { logOutIcon } from '@/assets';
+import { logOutIcon } from '../../assets';
 import { ButtonPage } from '../button-page/button-page.component';
-import useScreenSize from '@/hooks/useScreenSize.hook';
 import { useNavigate } from "react-router-dom";
-import useStage from '@/hooks/stage-store.hook';
+import useStage from '../../hooks/stage-store.hook';
+import useScreenSize from '../../hooks/useScreenSize.hook';
 
 export const  TopBar: FC = () => {
   const {setStep} = useStage();

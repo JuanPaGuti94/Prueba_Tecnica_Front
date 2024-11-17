@@ -1,4 +1,4 @@
-import { iconChevronUpBlack, iconChevronDownBlack } from '@/assets';
+import { iconChevronUpBlack, iconChevronDownBlack } from './../../../assets';
 import { FC, useState } from 'react';
 import { DropdownMenuProps } from '../types';
 
