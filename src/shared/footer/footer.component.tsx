@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { LabelPage } from '../label-footer/label-footer.component';
-import useScreenSize from '@/hooks/useScreenSize.hook';
-import useStage from '@/hooks/stage-store.hook';
+import useScreenSize from '../../hooks/useScreenSize.hook';
+import useStage from '../../hooks/stage-store.hook';
 
 export const Footer: FC = () => {
   const { width } = useScreenSize();

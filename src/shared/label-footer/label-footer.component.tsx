@@ -1,4 +1,4 @@
-import useStage from '@/hooks/stage-store.hook';
+import useStage from './../../hooks/stage-store.hook';
 import { FC } from 'react'
 
 type InputPageProps = {
