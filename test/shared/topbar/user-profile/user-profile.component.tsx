@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { UserProfileProps } from "../../../interfaces/topbar.interface";
+import { UserProfileProps } from "../types";
 
 export const UserProfile: FC<UserProfileProps> = ({
     name,

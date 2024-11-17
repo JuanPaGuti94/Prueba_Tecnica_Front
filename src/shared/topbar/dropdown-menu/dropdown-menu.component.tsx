@@ -1,6 +1,6 @@
 import { iconChevronUpBlack, iconChevronDownBlack } from './../../../assets';
 import { FC, useState } from 'react';
-import { DropdownMenuProps } from '../types';
+import { DropdownMenuProps } from '../../../interfaces/topbar.interface';
 
 export const DropdownMenu: FC<DropdownMenuProps> = ({ options }) => {
     const [isOpen, setIsOpen] = useState(false);

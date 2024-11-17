@@ -14,7 +14,7 @@
       "price": 1579900,
       "description": "lorem ipsum",
       "img": "https://http2.mlstatic.com/D_NQ_NP_2X_870157-MLU72161648642_102023-F.webp",
-      "stock": 5
+      "stock": 4
     },
     {
       "id": 3,
@@ -78,14 +78,14 @@
       "price": 828900,
       "description": "lorem ipsum",
       "img": "https://http2.mlstatic.com/D_NQ_NP_2X_707287-MLA79551602723_092024-F.webp",
-      "stock": 100
+      "stock": 10
     },
     {
-      "name": "Smartwatch Amazfit GTR 444",
-      "price": 550000,
-      "description": "Reloj inteligente con monitor de salud.",
-      "img": "https://example.com/amazfit-gtr4.jpg",
-      "stock": 50,
+      "name": "Pijama xl",
+      "price": 50000,
+      "description": "es uan piajama caere verga",
+      "img": "https://dominga.com.co/wp-content/uploads/2021/03/DJI_20220522_120228_346-scaled.jpg",
+      "stock": 10,
       "id": 11
     }
   ],

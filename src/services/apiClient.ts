@@ -7,7 +7,7 @@ const apiClient = axios.create({
   },
 });
 
-const getAuthHeaders = (
+export const getAuthHeaders = (
   customHeaders?: Record<string, string>,
   token?: string
 ) => {

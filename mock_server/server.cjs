@@ -13,13 +13,13 @@ app.get("/api/orders", (req, res) => {
     const dbPath = path.join(__dirname, "db.api.json");
     const db = JSON.parse(fs.readFileSync(dbPath));
 
-    res.json(db.orders);  
+    res.json({orders:db.orders});  
 });
 app.get("/api/products", (req, res) => {
     const dbPath = path.join(__dirname, "db.api.json");
     const db = JSON.parse(fs.readFileSync(dbPath));
 
-    res.json(db.products);  
+    res.json({products:db.products});  
 });
 
 app.post("/api/orders", (req, res) => {
@@ -48,7 +48,10 @@ app.post("/api/products", (req, res) => {
 
     fs.writeFileSync(dbPath, JSON.stringify(db, null, 2));
 
-    res.status(201).json(newProduct); 
+    res.status(201).json({
+        message: "Pedido Creado con éxito",
+        status:"success"
+    });
 });
 app.put("/api/orders/:id", (req, res) => {
     const productId = parseInt(req.params.id);  
@@ -69,7 +72,10 @@ app.put("/api/orders/:id", (req, res) => {
 
     fs.writeFileSync(dbPath, JSON.stringify(db, null, 2));
 
-    res.json(updatedProductData);
+    res.json({
+        message: "Pedido actualizado con éxito",
+        status:"success"
+    });
 });
 app.put("/api/products/:id", (req, res) => {
     const productId = parseInt(req.params.id);  
@@ -90,7 +96,10 @@ app.put("/api/products/:id", (req, res) => {
 
     fs.writeFileSync(dbPath, JSON.stringify(db, null, 2));
 
-    res.json(updatedProductData);
+    res.json({
+        message: "Producto actualizado con éxito",
+        status:"success"
+    });
 });
 
 
