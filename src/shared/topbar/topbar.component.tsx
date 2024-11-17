@@ -21,7 +21,15 @@ export const  TopBar: FC = () => {
   return (
     <div>
       <div className={`border-b-2 border-[#F7F1F1] h-[65px] flex items-center justify-end md:justify-between md:px-10 `}>
-        {width > 768 && <p className=' text-[24px]'>OrderTrack</p>}
+        {width > 768 &&      
+           <div className="flex gap-[12px]">
+          <img
+            src="https://d1muf25xaso8hp.cloudfront.net/https://dcd03715478de5e275023800fc42e909.cdn.bubble.io/f1731695514842x936712205183281900/AI-Generated-Image.png?&w=1024&h=1024&fit=crop&crop=entropy"
+            alt="icon"
+            className="w-[32px] h-[32px] rounded-full"
+          />
+          <p className=" text-[24px]">OrderTrack</p>
+        </div>}
       <div className=" h-[65px] flex items-center justify-end">
         {
           width > 768 && (        
@@ -29,7 +37,6 @@ export const  TopBar: FC = () => {
             <ButtonPage title={'Home'}  onClick={()=>handleButtonClick('home')} />
             <ButtonPage title={'Productos'}  onClick={()=>handleButtonClick('products')} />
             <ButtonPage title={'Pedidos'}  onClick={()=>handleButtonClick('orders')} />
-            <ButtonPage title={'Catalogo'}  onClick={()=>handleButtonClick('catalog')} />
           </div>)
         }
 

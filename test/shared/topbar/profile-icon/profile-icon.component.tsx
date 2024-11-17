@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { ProfileIconProps } from '../../../interfaces/topbar.interface';
+import { ProfileIconProps } from '../types';
 
 export const ProfileIcon: FC<ProfileIconProps> = ({ initials }) => {
     return (
