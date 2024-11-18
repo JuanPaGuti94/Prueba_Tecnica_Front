@@ -83,7 +83,7 @@ describe('TopBar', () => {
     fireEvent.click(screen.getByText('Home'));
     
     expect(setStepMock).toHaveBeenCalledWith('home');
-    expect(navigateMock).toHaveBeenCalledWith('/');
+    expect(navigateMock).toHaveBeenCalledWith('/Prueba_Tecnica_Front/');
   });
 
   it('should navigate to products page on Productos button click', () => {
@@ -92,7 +92,7 @@ describe('TopBar', () => {
     fireEvent.click(screen.getByText('Productos'));
     
     expect(setStepMock).toHaveBeenCalledWith('products');
-    expect(navigateMock).toHaveBeenCalledWith('/products');
+    expect(navigateMock).toHaveBeenCalledWith('/Prueba_Tecnica_Front/products');
   });
 
   it('should navigate to orders page on Pedidos button click', () => {
@@ -101,7 +101,7 @@ describe('TopBar', () => {
     fireEvent.click(screen.getByText('Pedidos'));
     
     expect(setStepMock).toHaveBeenCalledWith('orders');
-    expect(navigateMock).toHaveBeenCalledWith('/orders');
+    expect(navigateMock).toHaveBeenCalledWith('/Prueba_Tecnica_Front/orders');
   });
 
   it('should render user profile and dropdown menu', () => {

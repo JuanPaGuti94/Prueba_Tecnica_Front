@@ -20,7 +20,7 @@ vi.mock('../../src/pages/home/home.component', () => ({
 describe('AppRouter', () => {
   it('should render AppLayout when user is authenticated', () => {
     render(
-      <MemoryRouter initialEntries={['/']}>
+      <MemoryRouter initialEntries={['/Prueba_Tecnica_Front/']}>
         <AppRouter />
       </MemoryRouter>
     );
@@ -29,7 +29,7 @@ describe('AppRouter', () => {
 
   it('should call PrivateRoute with correct props', () => {
     render(
-      <MemoryRouter initialEntries={['/']}>
+      <MemoryRouter initialEntries={['/Prueba_Tecnica_Front/']}>
         <AppRouter />
       </MemoryRouter>
     );

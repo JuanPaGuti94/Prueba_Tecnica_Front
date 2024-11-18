@@ -17,8 +17,8 @@ export const TopBar: FC = () => {
   const handlerLogout = () => {};
   const handleButtonClick = (page: string) => {
     setStep(page);
-    if (page === 'home') navigate('/');
-    else navigate("/" + page);
+    if (page === 'home') navigate('/Prueba_Tecnica_Front/');
+    else navigate("/Prueba_Tecnica_Front/" + page);
   };
 
   const toggleMenu = () => {

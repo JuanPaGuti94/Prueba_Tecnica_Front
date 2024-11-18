@@ -4,6 +4,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  base: '/Prueba_Tecnica_Front/',
   plugins: [react()],
   resolve: {
     alias: {
