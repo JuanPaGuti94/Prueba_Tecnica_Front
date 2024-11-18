@@ -9,7 +9,7 @@ export const HomePage: FC = () => {
 
   const handleButtonClick = (page:string) => {
     setStep(page);
-      navigate("/"+page);
+      navigate("/Prueba_Tecnica_Front/"+page);
   };
   return (
     <div className="w-full">

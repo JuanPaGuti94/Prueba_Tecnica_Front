@@ -7,7 +7,7 @@ import { ProductosPage } from "../pages/product/products.component";
 export const AppRouter: FC = () => {
   return (
     <Routes>
-      <Route path="/" element={<AppLayout/>}>
+      <Route path="/Prueba_Tecnica_Front/" element={<AppLayout/>}>
         <Route index element={<HomePage/>} />
         <Route path="products" element={<ProductosPage/>} />
         <Route path="orders" element={<OrdersPage/>} />
