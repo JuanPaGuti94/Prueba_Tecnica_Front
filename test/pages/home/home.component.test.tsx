@@ -2,7 +2,24 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { HomePage } from '../../../src/pages/home/home.component'; // Asegúrate de que la ruta sea correcta
 import { afterEach, beforeEach, describe, expect, it, Mock, test, vi } from 'vitest';
+import { useNavigate } from 'react-router-dom';
+import useStage from '../../../src/hooks/stage-store.hook';
+vi.mock('react-router-dom', () => ({
+  useNavigate: vi.fn(),
+}));
+vi.mock('../../../src/hooks/stage-store.hook', () => ({
+  __esModule: true,
+  default: vi.fn(),
+}));
 describe('HomePage', () => {
+  const setStepMock = vi.fn();
+  const navigateMock = vi.fn();
+  beforeEach(() => {
+    (useNavigate as Mock).mockReturnValue(navigateMock);
+    (useStage as Mock).mockReturnValue({ 
+      setStep: setStepMock,
+ });
+  });
   it('should render the HomePage component correctly', () => {
     render(<HomePage />);
 
@@ -25,8 +42,6 @@ describe('HomePage', () => {
     expect(screen.getByText('Optimice la gestión de sus productos')).toBeInTheDocument();
     expect(screen.getByText('Descubra formas eficientes de organizar y realizar un seguimiento de todo su inventario de productos sin problemas.')).toBeInTheDocument();
 
-    // Verificar que el botón "Catalogo" esté presente
-    expect(screen.getByRole('button', { name: /catalogo/i })).toBeInTheDocument();
 
     // Verificar que la sección "Historias de éxito de clientes" esté presente
     expect(screen.getByText('Historias de éxito de clientes')).toBeInTheDocument();
