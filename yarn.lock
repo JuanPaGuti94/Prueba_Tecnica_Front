@@ -2860,7 +2860,7 @@ proxy-from-env@^1.1.0:
     framer-motion "^11.5.4"
     keycloak-js "^25.0.5"
     keycloak-react-web "^0.1.19"
-    prueba_tecnica_front "file:../../../.cache/yarn/v6/npm-prueba-tecnica-front-0.0.0-39a2e4ab-88a5-4caf-81b8-7890a694d62a-1731898754925/node_modules/prueba_tecnica_front"
+    prueba_tecnica_front "file:../../../.cache/yarn/v6/npm-prueba-tecnica-front-0.0.0-e3d70031-9a13-40b2-ab39-d181b4c329ae-1731898951843/node_modules/prueba_tecnica_front"
     react "^18.3.1"
     react-dom "^18.3.1"
     react-hook-form "^7.53.0"
