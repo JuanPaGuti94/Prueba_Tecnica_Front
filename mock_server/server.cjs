@@ -34,7 +34,10 @@ app.post("/api/orders", (req, res) => {
 
     fs.writeFileSync(dbPath, JSON.stringify(db, null, 2));
 
-    res.status(201).json(newProduct); 
+    res.status(201).json({
+        message: "Pedido Creado con éxito",
+        status:"success"
+    });
 });
 app.post("/api/products", (req, res) => {
     const newProduct = req.body; 
@@ -49,7 +52,7 @@ app.post("/api/products", (req, res) => {
     fs.writeFileSync(dbPath, JSON.stringify(db, null, 2));
 
     res.status(201).json({
-        message: "Pedido Creado con éxito",
+        message: "Prodcuts Creado con éxito",
         status:"success"
     });
 });

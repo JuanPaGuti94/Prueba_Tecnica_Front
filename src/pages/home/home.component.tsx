@@ -1,6 +1,16 @@
 import { FC } from 'react';
 import { HomeImages } from './components/home-images.component';
-export const HomePage: FC = () => {
+import { useNavigate } from "react-router-dom";
+import useStage from '../../hooks/stage-store.hook';
+export const HomePage: FC = () => {  
+    const navigate = useNavigate();
+
+    const {setStep} = useStage();
+
+  const handleButtonClick = (page:string) => {
+    setStep(page);
+      navigate("/"+page);
+  };
   return (
     <div className="w-full">
       <div className="px-[16px] md:px-[5%] pb-[24px] md:pb-[0px] block md:flex h-full">
@@ -17,7 +27,7 @@ export const HomePage: FC = () => {
               definitiva para una gestión eficiente de productos y pedidos.
             </p>
           </div>
-          <button className="w-[140px] py-[10px] bg-[#3C6090] text-[4.444vw] md:text-[1.25vw] text-white font-bold rounded-lg">
+          <button className="w-[140px] py-[10px] bg-[#3C6090] text-[4.444vw] md:text-[1.25vw] text-white font-bold rounded-lg" onClick={()=>handleButtonClick('products')}>
             Productos
           </button>
         </div>
@@ -51,8 +61,9 @@ export const HomePage: FC = () => {
           alt="six"
           className="w-[753px] rounded my-[20px]"
         />
-        <button className="w-[140px] py-[10px] bg-[#3C6090] text-[4.444vw] md:text-[1.25vw] text-white font-bold rounded-lg">
-          Catalogo
+        <button className="w-[140px] py-[10px] bg-[#3C6090] text-[4.444vw] md:text-[1.25vw] text-white font-bold rounded-lg" 
+        onClick={()=>handleButtonClick('orders')}>
+          Pedidos
         </button>
       </div>
       <div className="bg-[F9F9F9] py-[36px] flex flex-col items-center px-[40px] gap-[12px]">

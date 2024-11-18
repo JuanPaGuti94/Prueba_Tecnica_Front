@@ -125,6 +125,24 @@
       ],
       "total": 123456,
       "id": 2
+    },
+    {
+      "customer_name": "diana",
+      "identification_type": "CC",
+      "identification_number": "22222222",
+      "order_date": "2024-11-21T00:00:00.000Z",
+      "products": [
+        {
+          "id": 9,
+          "quantity": 2
+        },
+        {
+          "id": 11,
+          "quantity": 13
+        }
+      ],
+      "total": 1057800,
+      "id": 4
     }
   ]
 }
