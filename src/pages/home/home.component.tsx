@@ -1,15 +1,15 @@
-import { FC } from 'react';
-import { HomeImages } from './components/home-images.component';
+import { FC } from "react";
+import { HomeImages } from "./components/home-images.component";
 import { useNavigate } from "react-router-dom";
-import useStage from '../../hooks/stage-store.hook';
-export const HomePage: FC = () => {  
-    const navigate = useNavigate();
+import useStage from "../../hooks/stage-store.hook";
+export const HomePage: FC = () => {
+  const navigate = useNavigate();
 
-    const {setStep} = useStage();
+  const { setStep } = useStage();
 
-  const handleButtonClick = (page:string) => {
+  const handleButtonClick = (page: string) => {
     setStep(page);
-      navigate("/Prueba_Tecnica_Front/"+page);
+    navigate("/Prueba_Tecnica_Front/" + page);
   };
   return (
     <div className="w-full">
@@ -27,7 +27,10 @@ export const HomePage: FC = () => {
               definitiva para una gestión eficiente de productos y pedidos.
             </p>
           </div>
-          <button className="w-[140px] py-[10px] bg-[#3C6090] text-[4.444vw] md:text-[1.25vw] text-white font-bold rounded-lg" onClick={()=>handleButtonClick('products')}>
+          <button
+            className="w-[140px] py-[10px] bg-[#3C6090] text-[4.444vw] md:text-[1.25vw] text-white font-bold rounded-lg"
+            onClick={() => handleButtonClick("products")}
+          >
             Productos
           </button>
         </div>
@@ -61,8 +64,10 @@ export const HomePage: FC = () => {
           alt="six"
           className="w-[753px] rounded my-[20px]"
         />
-        <button className="w-[140px] py-[10px] bg-[#3C6090] text-[4.444vw] md:text-[1.25vw] text-white font-bold rounded-lg" 
-        onClick={()=>handleButtonClick('orders')}>
+        <button
+          className="w-[140px] py-[10px] bg-[#3C6090] text-[4.444vw] md:text-[1.25vw] text-white font-bold rounded-lg"
+          onClick={() => handleButtonClick("orders")}
+        >
           Pedidos
         </button>
       </div>
@@ -96,10 +101,11 @@ export const HomePage: FC = () => {
       </div>
       <div className="bg-[#3C6090] py-[50px] flex flex-col items-center px-[16px] gap-[24px]">
         <p className="text-white text-[6.667vw] md:text-[1.875vw] font-bold text-center">
-        Suscríbete a nuestras actualizaciones
+          Suscríbete a nuestras actualizaciones
         </p>
         <p className="text-white text-[4.444vw] md:text-[1.25vw] text-center">
-        Manténgase informado sobre nuestras últimas innovaciones en gestión de catálogos y procesamiento de pedidos.
+          Manténgase informado sobre nuestras últimas innovaciones en gestión de
+          catálogos y procesamiento de pedidos.
         </p>
       </div>
     </div>
