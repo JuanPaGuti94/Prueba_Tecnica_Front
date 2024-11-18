@@ -5,6 +5,9 @@ export type StageState = {
   setStep: (step: string) => void;
   createProduct: boolean | undefined;
   setCreateProduct: (createProduct: boolean) => void;
+  createOrder: boolean | undefined;
+  setCreateOrder: (createOrder: boolean) => void;
+
 
   productName: string ;
   setProductName: (productName: string) => void;

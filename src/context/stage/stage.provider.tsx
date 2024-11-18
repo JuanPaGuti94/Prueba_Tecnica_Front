@@ -4,6 +4,7 @@ import { StageContext } from "./stage.context";
 export const StageProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [step, setStep] = useState("home");
   const [createProduct, setCreateProduct] = useState(false);
+  const [createOrder, setCreateOrder] = useState(false);
   const [productName, setProductName] = useState<string>("");
   const [image, setImage] = useState<string>("");
   const [productDescription, setProductDescription] = useState<string>("");
@@ -25,6 +26,8 @@ export const StageProvider: FC<{ children: ReactNode }> = ({ children }) => {
       setProductPrice,
       productStock,
       setProductStock,
+      createOrder, 
+      setCreateOrder
     }),
     [
       step,
@@ -34,6 +37,7 @@ export const StageProvider: FC<{ children: ReactNode }> = ({ children }) => {
       productDescription,
       productPrice,
       productStock,
+      createOrder
     ]
   );
 
