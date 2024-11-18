@@ -1,28 +1,38 @@
-import { renderHook } from '@testing-library/react';
-import { StageProvider } from '../../src/context/stage/stage.provider';
-import useStage from '../../src/hooks/stage-store.hook';
+import { renderHook } from '@testing-library/react-hooks';
+import { StageProvider } from '../../src/context/stage'; 
+import useStage from '../../src/hooks/stage-store.hook'; 
+import { afterEach, beforeEach, describe, expect, it, Mock, vi } from 'vitest';
 import React from 'react';
-import { describe, expect, it, vi } from 'vitest';
-vi.mock('../../src/hooks/stage-store.hook');
-// Crea un mock del StageContext
-const MockStageProvider = ({ children, value }) => (
-  <StageProvider>
-    {children}
-  </StageProvider>
-);
-
 describe('useStage', () => {
   it('should throw an error if used outside of StageProvider', () => {
     const { result } = renderHook(() => useStage());
-
+    
+    expect(result.error).toEqual(new Error("useStage must be used within a StageProvider"));
   });
 
   it('should return context value when used within StageProvider', () => {
-    const mockContextValue = { stage: 'test stage' };
+    const mockValue = {
+      currentStage: 'testStage',
+      createOrder: false,
+      createProduct: false,
+      image: '',
+      productDescription: '',
+      productName: '',
+      productPrice: '',
+      productStock: '',
+      setCreateOrder: vi.fn(), 
+      setCreateProduct: vi.fn(),
+      setImage: vi.fn(),
+      setProductDescription: vi.fn(),
+      setProductName: vi.fn(),
+      setProductPrice: vi.fn(),
+      setProductStock: vi.fn(),
+      setStep: vi.fn(),
+      step: 'home', 
+    };
 
     const { result } = renderHook(() => useStage(), {
-      wrapper: ({ children }) => <MockStageProvider value={mockContextValue}>{children}</MockStageProvider>,
+      wrapper: ({ children }) => <StageProvider value={mockValue}>{children}</StageProvider>,
     });
-
   });
 });

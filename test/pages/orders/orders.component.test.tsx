@@ -1,45 +1,57 @@
-import { OrdersPage } from '../../../src/pages/orders/orders.component'; 
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import React from 'react';
 import { afterEach, beforeEach, describe, expect, it, Mock, vi } from 'vitest';
-import { ProductosPage } from '../../../src/pages/product/products.component';
-import useStage from '../../../src/hooks/stage-store.hook';
-
+import { OrdersPage } from './../../../src/pages/orders/orders.component';
+import useStage from './../../../src/hooks/stage-store.hook';
 import {
-  fetchProducts,
-  fetchCreateProducts,
-  fetchDeleteProducts,
-  fetchUpdateProducts,
-} from '../../../src/utils/products/product.utils';
-// Mock de los hooks y componentes
+  fetchCreateOrder,
+  fetchDeleteOrders,
+  fetchOrder,
+  fetchUpdateOrder,
+} from './../../../src/utils/orders/order.utils';
 
-vi.mock('../../../src/hooks/stage-store.hook', () => ({
+vi.mock('./../../../src/hooks/stage-store.hook', () => ({
   __esModule: true,
   default: vi.fn(),
 }));
 
-vi.mock('../../../src/utils/products/product.utils', () => ({
-  fetchProducts: vi.fn(),
-  fetchCreateProducts: vi.fn(),
-  fetchDeleteProducts: vi.fn(),
-  fetchUpdateProducts: vi.fn(),
+vi.mock('./../../../src/utils/orders/order.utils', () => ({
+  fetchCreateOrder: vi.fn(),
+  fetchDeleteOrders: vi.fn(),
+  fetchOrder: vi.fn(),
+  fetchUpdateOrder: vi.fn(),
 }));
 
-describe('ProductosPage', () => {
-  
+describe('OrdersPage', () => {
   const setCreateOrderMock = vi.fn();
-  const mockProducts = [
-    { id: 1, name: 'Producto 1', price: 100, description: 'Descripción 1', img: 'url1', stock: 10 },
-    { id: 2, name: 'Producto 2', price: 200, description: 'Descripción 2', img: 'url2', stock: 5 },
+  const mockOrders = [
+    {
+      id: 1,
+      customer_name: 'Cliente 1',
+      identification_type: 'DNI',
+      identification_number: '12345678',
+      order_date: '2023-01-01',
+      products: [],
+      total: 100,
+    },
+    {
+      id: 2,
+      customer_name: 'Cliente 2',
+      identification_type: 'DNI',
+      identification_number: '87654321',
+      order_date: '2023-01-02',
+      products: [],
+      total: 200,
+    },
   ];
 
   beforeEach(() => {
-     (useStage as Mock).mockReturnValue({ 
-      createOrder: false, 
+    (useStage as Mock).mockReturnValue({
+      createOrder: false,
       setCreateOrder: setCreateOrderMock,
- });
-    (fetchProducts as Mock).mockImplementation(async (setData) => {
-      setData(mockProducts);
+    });
+    (fetchOrder as Mock).mockImplementation(async (setData) => {
+      setData(mockOrders);
     });
   });
 
@@ -47,10 +59,68 @@ describe('ProductosPage', () => {
     vi.clearAllMocks();
   });
 
-  describe('OrdersPage', () => {
-    it('should render the OrdersPage component correctly', () => {
-      render(<OrdersPage />);
+  it('should render loading state initially', () => {
+    render(<OrdersPage />);
+    
+    expect(screen.getByText('¡Gestión de Pedidos!')).toBeInTheDocument();
+  });
+
+  it('should render orders after loading', async () => {
+    render(<OrdersPage />);
+    
+    await waitFor(() => {
+      expect(screen.getByText('Cliente 1')).toBeInTheDocument();
+      expect(screen.getByText('Cliente 2')).toBeInTheDocument();
     });
   });
 
+  it('should open order creation form when "CREAR" button is clicked', async () => {
+    render(<OrdersPage />);
+    
+    await waitFor(() => {
+      fireEvent.click(screen.getByTestId('crear'));
+      expect(setCreateOrderMock).toHaveBeenCalledWith(true);
+    });
+  });
+
+  it('should create a new order', async () => {
+    (fetchCreateOrder as Mock).mockImplementation(async () => {
+      await fetchOrder(setCreateOrderMock);
+    });
+    
+    render(<OrdersPage />);
+    
+    await waitFor(() => {
+      fireEvent.submit(screen.getByRole('button', { name: /crear/i }));
+
+ });
+  });
+
+  it('should delete an order', async () => {
+    (fetchDeleteOrders as Mock).mockImplementation(async () => {
+      await fetchOrder(setCreateOrderMock);
+    });
+
+    render(<OrdersPage />);
+    
+    await waitFor(() => {
+      const deleteButton = screen.getAllByText('Borrar')[0]; 
+      fireEvent.click(deleteButton);
+      expect(fetchDeleteOrders).toHaveBeenCalledWith('1'); 
+    });
+  });
+
+  it('should edit an order', async () => {
+    (fetchUpdateOrder as Mock).mockImplementation(async () => {
+      await fetchOrder(setCreateOrderMock);
+    });
+
+    render(<OrdersPage />);
+    
+    await waitFor(async () => {
+      const editButton = await screen.findAllByText(/editar/i); 
+      fireEvent.click(editButton[0]);
+      expect(setCreateOrderMock).toHaveBeenCalledWith(true);
+    });
+  });
 });
